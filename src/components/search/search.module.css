@@ -1,0 +1,26 @@
+.search{
+  background-color: rgb(103, 15, 15);
+  border-bottom: 2px solid rgb(224, 115, 115);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 62px;
+  left: 0;
+  right: 0;
+  height: 45px;
+}
+
+.searchInput {
+  max-width: 250px;
+  font-size: 16px;
+  height: 22px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 2px;
+}
