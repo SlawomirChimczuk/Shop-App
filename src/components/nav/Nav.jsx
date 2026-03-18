@@ -18,7 +18,7 @@ export default function Nav(){
 
                 <Link className={styles.navLink} to="/checkout">
                     <div className={styles.cartQuantity}>2</div>
-                    <div className={styles.navCart}>Cart</div>
+                    <div className={styles.navCart}>Basket</div>
                 </Link>
             </div>
         </div>

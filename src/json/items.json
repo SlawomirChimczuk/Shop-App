@@ -1,0 +1,372 @@
+{
+  "items": [
+    {
+      "id": "83d4ca15-6aa0-4b85-b27f-e1d07ac678c6",
+      "image": "red-flowers.jpg",
+      "name": "Red Flowers Print",
+      "price": 1199,
+      "tags": [
+        "floral",
+        "nature"
+      ]
+    },
+    {
+      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+      "image": "trees.jpg",
+      "name": "Trees Print",
+      "price": 2395,
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
+      "image": "blue-flowers.jpg",
+      "name": "Red Flowers Print",
+      "price": 1799,
+      "tags": [
+        "floral",
+        "nature"
+      ]
+    },
+    {
+      "id": "54e0eccd-8f36-462b-b68a-486349e85a3d",
+      "image": "carne-flowers.jpg",
+      "name": "Crane with Flowers Print",
+      "price": 2399,
+      "tags": [
+        "floral",
+        "nature",
+        "birds"
+      ]
+    },
+    {
+      "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
+      "image": "cat.jpg",
+      "name": "Cat Print",
+      "price": 1900,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "77ac32u5-6a89-4bcb-a5d1-158a74287c53",
+      "image": "green-flower.jpg",
+      "name": "Green Flower Print",
+      "price": 2599,
+      "tags": [
+        "floral",
+        "nature"
+      ]
+    },
+    {
+      "id": "df62nh79-b18b-4e2a-9250-31e67412f98d",
+      "image": "dog.jpg",
+      "name": "Dog Print",
+      "price": 2200,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "78vf9bbe-9e46-475b-adde-4df4dfed3a04",
+      "image": "avocado.jpg",
+      "name": "Avocado Print",
+      "price": 2499,
+      "tags": [
+        "nature",
+        "food"
+      ]
+    },
+    {
+      "id": "ag45uy12-f540-454e-8a1e-363f25dbae7d",
+      "image": "tomatoes.jpg",
+      "name": "Tomatoes Print",
+      "price": 2374,
+      "tags": [
+        "nature",
+        "food"
+      ]
+    },
+    {
+      "id": "6723ghbt-4d27-4872-89f6-5bcb0527347j",
+      "image": "lions.jpg",
+      "name": "Lions Print",
+      "price": 2800,
+      "tags": [
+        "animals",
+        "nature"
+      ]
+    },
+    {
+      "id": "hat561la-3501-4b17-9889-a3bad6fftays",
+      "image": "pineapple.jpg",
+      "name": "Pineapple Print",
+      "price": 2719,
+      "tags": [
+        "nature",
+        "food"
+      ]
+    },
+    {
+      "id": "gyat561l-ea98-41ee-7127-b916638cac4a",
+      "image": "red-rose.jpg",
+      "name": " Red Rose Print",
+      "price": 3159,
+      "tags": [
+        "nature",
+        "floral"
+      ]
+    },
+    {
+      "id": "2178aody-386d-yu43-82f0-6fb1ee72618a",
+      "image": "white-rose.jpg",
+      "name": "White Rose Print",
+      "price": 3159,
+      "tags": [
+        "nature",
+        "floral"
+      ]
+    },
+    {
+      "id": "12n3t56a-ebc9-476a-huat-c78a40ee36b9",
+      "image": "sunflower.jpg",
+      "name": "Sunflower Print",
+      "price": 2099,
+       "tags": [
+        "nature",
+        "floral",
+        "food"
+      ]
+    },
+    {
+      "id": "uy3401dy-aff4-435f-7612-517cf5432ece",
+      "image": "parrots-in-jungle.jpg",
+      "name": "Parrots in Jungle",
+      "price": 3200,
+      "tags": [
+        "nature",
+        "animal",
+        "floral"
+      ]
+    },
+    {
+      "id": "po1037dt-e98c-42aa-8c55-b6b851967451",
+      "image": "bicycle.jpg",
+      "name": "Bicycle Print",
+      "price": 3300,
+      "tags": [
+        "sport",
+        "equipment"
+      ]
+    },
+    {
+      "id": "yu45q78a-3067-4e68-a5ba-d827rt0bfya5",
+      "image": "skateboard.jpg",
+      "name": "Skateboard Print",
+      "price": 2299,
+      "tags": [
+        "sport",
+        "equipment"
+      ]
+    },
+    {
+      "id": "du65120l-8586-494f-ab53-agt32540uat5",
+      "image": "poppy.jpg",
+      "name": "Men's Athletic Sneaker - White",
+      "price": 4590,
+      "tags": [
+        "nature",
+        "floral"
+      ]
+    },
+    {
+      "id": "ty6543w4-8b40-4ca5-5162-b61fe3d90gt5",
+      "image": "dandelions.jpg",
+      "name": "Dandelions Print",
+      "price": 2900,
+      "tags": [
+        "nature",
+        "floral"
+      ]
+    },
+    {
+      "id": "765ge65q-79ef-1256-a6cf-631edy4a1b4a",
+      "image": "cactus.jpg",
+      "name": "Cactus Print",
+      "price": 1599,
+      "tags": [
+       "nature"
+      ]
+    },
+    {
+      "id": "87at15ju-4e72-45cc-935c-9e13d797193f",
+      "image": "orchid.jpg",
+      "name": "Orchid Print",
+      "price": 2550,
+      "tags": [
+        "nature",
+        "floral"
+      ]
+    },
+    {
+      "id": "1oue5412-6055-422a-1256-b3d6728b76d4",
+      "image": "giraffe.jpg",
+      "name": "Giraffe print",
+      "price": 1599,
+      "tags": [
+         "animal"
+      ]
+    },
+    {
+      "id": "6548fy52-9a15-4979-b459-5adb0d009549",
+      "image": "elephant-and-leaves.jpg",
+      "name": "Elephant and Leaves Print",
+      "price": 2899,
+      "tags": [
+        "animal",
+        "nature"
+      ]
+    },
+    {
+      "id": "d1a873as-1377-42bc-89a5-e572d19245td",
+      "image": "willow-leaves.jpg",
+      "name": "Willow Leaves Print",
+      "price": 3299,
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "fyatr973-5463-4d45-9af8-edy640a43209",
+      "image": "chestnut-leaves.jpg",
+      "name": "Chestnut leaves Print",
+      "price": 2199,
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "afhy6712-743d-49b3-8743-ec2584rt0503",
+      "image": "maple-leaves.jpg",
+      "name": "Maple Leaves Print",
+      "price": 1650,
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "ftai78es-f977-40a4-5462-12ba50734fb0",
+      "image": "zebra.jpg",
+      "name": "Zebra Print",
+      "price": 2190,
+      "tags": [
+        "animal",
+        "nature"
+      ]
+    },
+    {
+      "id": "ftay6541-fd59-4a6a-1265-e75434b6d53c",
+      "image": "tiger.jpg",
+      "name": "Tiger Print",
+      "price": 3200,
+      "tags": [
+        "animal"
+      ]
+    },
+    {
+      "id": "ft56310f-bc79-49c6-7623-1af7e3651358",
+      "image": "fox.jpg",
+      "name": "Fox Print",
+      "price": 2399,
+      "tags": [
+       "animal"
+      ]
+    },
+    {
+      "id": "fgta8712-3b23-4bc6-9ff8-334112a909y4",
+      "image": "frog.jpg",
+      "name": "Frog Print",
+      "price": 1999,
+      "tags": [
+        "animal"
+      ]
+    },
+    {
+      "id": "fy543uy1-1bc1-482d-9ce7-cd7f4a669842",
+      "image": "fox-and-frog.jpg",
+      "name": "Fox and Frog Print",
+      "price": 5000,
+      "tags": [
+        "animal",
+        "nature"
+      ]
+    },
+    {
+      "id": "afdaf581-66d6-4dc7-9475-e2b015998a45",
+      "image": "phone.jpg",
+      "name": "Phone Print",
+      "price": 3200,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "1723po12-e004-4c20-a120-40egy409uy5",
+      "image": "microphone.jpg",
+      "name": "Microphone Print",
+      "price": 2399,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "gyt5481a-d501-1209-8754-a9659b0757a0",
+      "image": "bulb.jpg",
+      "name": "Bulb Print",
+      "price": 1699,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "f567a5ps-2efe-4fd9-b0fd-ba5233e0u751",
+      "image": "car.jpg",
+      "name": "Car Print",
+      "price": 2500,
+      "tags": [
+       "vehicles"
+      ]
+    },
+    {
+      "id": "du56asd9-dd68-467e-9f71-8bf6f7230942",
+      "image": "bus.jpg",
+      "name": "Bus Print",
+      "price": 3099,
+      "tags": [
+        "vehicles"
+      ]
+    },
+    {
+      "id": "0a12sp3a-6d40-4a65-ab26-b24ecf234bce",
+      "image": "truck.jpg",
+      "name": "Truck Print",
+      "price": 2990,
+      "tags": [
+        "vehicles"
+      ]
+    }
+  ],
+  "basket-items": [
+    {
+      "id": "83d4ca15-6aa0-4b85-b27f-e1d07ac678c6",
+      "image": "red-flowers.jpg",
+      "name": "Red Flowers Print",
+      "price": 1199,
+      "tags": [
+        "floral",
+        "nature"
+      ]
+    }
+  ]
+}
