@@ -133,7 +133,7 @@
       "image": "sunflower.jpg",
       "name": "Sunflower Print",
       "price": 2099,
-       "tags": [
+      "tags": [
         "nature",
         "floral",
         "food"
@@ -196,7 +196,7 @@
       "name": "Cactus Print",
       "price": 1599,
       "tags": [
-       "nature"
+        "nature"
       ]
     },
     {
@@ -215,7 +215,7 @@
       "name": "Giraffe print",
       "price": 1599,
       "tags": [
-         "animal"
+        "animal"
       ]
     },
     {
@@ -280,7 +280,7 @@
       "name": "Fox Print",
       "price": 2399,
       "tags": [
-       "animal"
+        "animal"
       ]
     },
     {
@@ -335,7 +335,7 @@
       "name": "Car Print",
       "price": 2500,
       "tags": [
-       "vehicles"
+        "vehicles"
       ]
     },
     {
@@ -359,14 +359,40 @@
   ],
   "basket-items": [
     {
-      "id": "83d4ca15-6aa0-4b85-b27f-e1d07ac678c6",
-      "image": "red-flowers.jpg",
+      "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
+      "timeCreated": 1773866770885,
+      "image": "blue-flowers.jpg",
       "name": "Red Flowers Print",
-      "price": 1199,
+      "price": 1799,
       "tags": [
         "floral",
         "nature"
-      ]
+      ],
+      "quantity": 3
+    },
+    {
+      "id": "77ac32u5-6a89-4bcb-a5d1-158a74287c53",
+      "timeCreated": 1773869716820,
+      "image": "green-flower.jpg",
+      "name": "Green Flower Print",
+      "price": 2599,
+      "tags": [
+        "floral",
+        "nature"
+      ],
+      "quantity": 5
+    },
+    {
+      "id": "ag45uy12-f540-454e-8a1e-363f25dbae7d",
+      "timeCreated": 1773869726475,
+      "image": "tomatoes.jpg",
+      "name": "Tomatoes Print",
+      "price": 2374,
+      "tags": [
+        "nature",
+        "food"
+      ],
+      "quantity": 1
     }
   ]
 }
