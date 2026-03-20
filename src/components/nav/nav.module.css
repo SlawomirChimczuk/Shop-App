@@ -55,11 +55,10 @@
   font-size: 14px;
   font-weight: 700;
   background-color: rgb(225, 119, 119);
-  border-radius: 12px;
-  padding: 2px;
+  border-radius: 16px;
   position: absolute;
   top: 35.5px;
   right: 10px;
-  width: 16px;
   text-align: center;
+  padding: 5px;
 }
