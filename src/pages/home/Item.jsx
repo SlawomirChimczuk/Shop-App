@@ -1,6 +1,7 @@
 import styles from "./item.module.css"
 import style from "../../additional.module.css"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { basketItemsContext } from "../../context/BasketItemsProvider";
 import axios from "axios";
 
 
@@ -8,23 +9,38 @@ import axios from "axios";
 export default function Item({item}){    
 
     const [qty, setQty] = useState(1);
-    
+    const { basketItems, loadBasket } = useContext(basketItemsContext);
 
+    
     const addToBasket = async () => {
+
+        const checkItem = basketItems.find(el => el.id === item.id);
         
         const time = Date.now();
         
-        await axios.post('http://localhost:5000/basket-items', {
-            timeCreated: time,
-            id: item.id,
-            image: item.image,
-            name: item.name,
-            price: item.price,
-            tags: item.tags,
-            quantity: qty
-        });
+        if(checkItem === undefined){
+            await axios.post('http://localhost:5000/basket-items', {
+                timeCreated: time,
+                id: item.id,
+                image: item.image,
+                name: item.name,
+                price: item.price,
+                tags: item.tags,
+                quantity: qty
+            });
+        } else {
+            await axios.put(`http://localhost:5000/basket-items/${item.id}`, {
+                timeCreated: time,
+                id: item.id,
+                image: item.image,
+                name: item.name,
+                price: item.price,
+                tags: item.tags,
+                quantity: checkItem.quantity + qty
+            });
+        }
+        loadBasket();
     }
-
 
     return(
         <div className={styles.itemWrapper}>

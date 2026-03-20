@@ -14,7 +14,7 @@ export default function Home(){
                 const data = await res.json();
                 setItems(data);
             } catch (error){
-                console.log('Error fetching data', error);
+                console.log('Error fetching data for items: ', error);
             } finally {
                 setLoading(true);
             }

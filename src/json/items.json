@@ -359,8 +359,8 @@
   ],
   "basket-items": [
     {
+      "timeCreated": 1774032446324,
       "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
-      "timeCreated": 1773866770885,
       "image": "blue-flowers.jpg",
       "name": "Red Flowers Print",
       "price": 1799,
@@ -368,31 +368,30 @@
         "floral",
         "nature"
       ],
-      "quantity": 3
+      "quantity": 49
     },
     {
-      "id": "77ac32u5-6a89-4bcb-a5d1-158a74287c53",
-      "timeCreated": 1773869716820,
-      "image": "green-flower.jpg",
-      "name": "Green Flower Print",
-      "price": 2599,
+      "timeCreated": 1774029368679,
+      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+      "image": "trees.jpg",
+      "name": "Trees Print",
+      "price": 2395,
       "tags": [
-        "floral",
         "nature"
       ],
-      "quantity": 5
+      "quantity": 33
     },
     {
-      "id": "ag45uy12-f540-454e-8a1e-363f25dbae7d",
-      "timeCreated": 1773869726475,
-      "image": "tomatoes.jpg",
-      "name": "Tomatoes Print",
-      "price": 2374,
+      "timeCreated": 1774029380133,
+      "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
+      "image": "cat.jpg",
+      "name": "Cat Print",
+      "price": 1900,
       "tags": [
-        "nature",
-        "food"
+        "animals"
       ],
-      "quantity": 1
+      "quantity": 10
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
