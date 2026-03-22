@@ -22,7 +22,7 @@
     {
       "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
       "image": "blue-flowers.jpg",
-      "name": "Red Flowers Print",
+      "name": "Blue Flowers Print",
       "price": 1799,
       "tags": [
         "floral",
@@ -359,30 +359,7 @@
   ],
   "basket-items": [
     {
-      "timeCreated": 1774032446324,
-      "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
-      "image": "blue-flowers.jpg",
-      "name": "Red Flowers Print",
-      "price": 1799,
-      "tags": [
-        "floral",
-        "nature"
-      ],
-      "quantity": 49
-    },
-    {
-      "timeCreated": 1774029368679,
-      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
-      "image": "trees.jpg",
-      "name": "Trees Print",
-      "price": 2395,
-      "tags": [
-        "nature"
-      ],
-      "quantity": 33
-    },
-    {
-      "timeCreated": 1774029380133,
+      "timeCreated": 1774209251617,
       "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
       "image": "cat.jpg",
       "name": "Cat Print",
@@ -390,7 +367,7 @@
       "tags": [
         "animals"
       ],
-      "quantity": 10
+      "quantity": 30
     },
     {
       "id": "77ac32u5-6a89-4bcb-a5d1-158a74287c53",
@@ -403,6 +380,54 @@
         "nature"
       ],
       "quantity": 8
+    },
+    {
+      "id": "ag45uy12-f540-454e-8a1e-363f25dbae7d",
+      "timeCreated": 1774194739730,
+      "image": "tomatoes.jpg",
+      "name": "Tomatoes Print",
+      "price": 2374,
+      "tags": [
+        "nature",
+        "food"
+      ],
+      "quantity": 1
+    },
+    {
+      "timeCreated": 1774209247122,
+      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+      "image": "trees.jpg",
+      "name": "Trees Print",
+      "price": 2395,
+      "tags": [
+        "nature"
+      ],
+      "quantity": 20
+    },
+    {
+      "timeCreated": 1774209246006,
+      "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
+      "image": "blue-flowers.jpg",
+      "name": "Blue Flowers Print",
+      "price": 1799,
+      "tags": [
+        "floral",
+        "nature"
+      ],
+      "quantity": 12
+    },
+    {
+      "timeCreated": 1774209254913,
+      "id": "54e0eccd-8f36-462b-b68a-486349e85a3d",
+      "image": "carne-flowers.jpg",
+      "name": "Crane with Flowers Print",
+      "price": 2399,
+      "tags": [
+        "floral",
+        "nature",
+        "birds"
+      ],
+      "quantity": 24
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

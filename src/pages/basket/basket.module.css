@@ -1,0 +1,154 @@
+.basketHeader {
+  background-color: rgb(103, 15, 15);
+  border-bottom: 2px solid rgb(224, 115, 115);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+
+.basketHeader .basketHeaderContent {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.basketHeader .basketHeaderContentSection {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+}
+
+.basketHeader .backToHome {
+  color: white;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .basketHeader .basketHeaderContentSection {
+    font-size: 20px;
+    margin-right: 60px;
+  }
+
+  .basketHeader .backToHome {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .basketHeader .basketHeaderContentSection {
+    margin-right: 5px;
+  }
+}
+
+.basketMain {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 30px;
+  margin-bottom: 100px;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+.basketMain .basketMainTitle {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.basketMain .basketMainGrid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  column-gap: 12px;
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .basketMain .main {
+    max-width: 500px;
+  }
+
+  .basketMain .basketMainGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.basketMain .basketItemWrapper,
+.basketMain .payment-summary {
+  border: 2px solid rgb(224, 115, 115);;
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.basketMain .basketItemWrapper {
+  margin-bottom: 12px;
+}
+
+.basketMain .basketItemDate {
+  color: rgb(103, 15, 15);
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.basketMain .basketItemDataLayout {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 35px;
+}
+
+.basketImgWrapper{
+
+}
+
+.basketMain .basketImg {
+  max-width: 100%;
+  max-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.basketMain .basketItemInfoSize {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.basketActionButtonWrapper{
+    width: 100px;
+}
+
+.basketActionButton{
+  display: inline-block;
+  padding: 6px 9.5px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgb(170, 59, 59);
+  color: white;
+  background-color: rgb(103, 15, 15);
+  margin-right: 5px;
+  min-width: 65px;
+  margin-bottom: 3px;
+}
+
+
