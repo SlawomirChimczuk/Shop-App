@@ -3,6 +3,7 @@ import style from "../../additional.module.css"
 import { useContext, useState } from "react"
 import { basketItemsContext } from "../../context/BasketItemsProvider";
 import axios from "axios";
+import { toDecimal } from "../../utils/price";
 
 
 
@@ -55,7 +56,7 @@ export default function Item({item}){
             
 
             <div className={styles.itemPrice}>
-                {item.price}
+                {toDecimal(item.price)}
             </div>
 
             <div className={styles.itemQuantity}>
