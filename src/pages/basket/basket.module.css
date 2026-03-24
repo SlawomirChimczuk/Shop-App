@@ -99,6 +99,7 @@
 
 .basketMain .basketItemWrapper {
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .basketMain .basketItemDate {
@@ -133,6 +134,11 @@
   margin-bottom: 8px;
 }
 
+.basketItemInput{
+  width: 40px;
+  margin: 0 5px;
+}
+
 .basketActionButtonWrapper{
     width: 100px;
 }
@@ -150,5 +156,10 @@
   min-width: 65px;
   margin-bottom: 3px;
 }
+
+
+
+
+
 
 

@@ -1,20 +1,44 @@
 import styles from './basket.module.css'
 import axios from "axios";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { basketItemsContext } from "../../context/BasketItemsProvider";
 
 export default function ItemsSummary(){
 
     const { basketItems, loadBasket } = useContext(basketItemsContext);
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+      setItems(basketItems);
+    }, [basketItems]);
+
+
+    function handleQuantityChange(id, itemQuantity){
+       const updateBasket = items.map((item) => {
+        if(item.id === id){
+            return { ...item, quantity: Number(itemQuantity)}
+        };
+        return item;
+       });
+       setItems(updateBasket);
+     
+    }    
 
     return(
         <>
             <div>
 
-                {basketItems.map((basketItem)=> {
+                {items.map((basketItem)=> {
 
+                    
                     const updateItemQuantity = async () => {
-                        console.log("update");
+                        const itemQyt = items.filter(item => item.id === basketItem.id);
+                        const time = Date.now();
+                        await axios.patch(`http://localhost:5000/basket-items/${basketItem.id}`, {  
+                            timeCreated: time,                        
+                            quantity: itemQyt[0].quantity
+                        });
+                        await loadBasket();
                     }
 
                     const deleteItemFromBasket = async () =>{
@@ -42,8 +66,13 @@ export default function ItemsSummary(){
                                         Price: {basketItem.quantity * basketItem.price}
                                     </div>
                                     <div className={styles.basketItemInfoSize}>
-                                        Quantity: {basketItem.quantity}
+                                        Quantity: 
+                                        <input className={styles.basketItemInput} type='number' min='1'
+                                            value={basketItem.quantity}
+                                            onChange={(e) => handleQuantityChange(basketItem.id, e.target.value)}
+                                        />
                                     </div>
+                                    
 
                                 </div>
 
