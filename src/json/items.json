@@ -22,7 +22,7 @@
     {
       "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
       "image": "blue-flowers.jpg",
-      "name": "Red Flowers Print",
+      "name": "Blue Flowers Print",
       "price": 1799,
       "tags": [
         "floral",
@@ -359,19 +359,32 @@
   ],
   "basket-items": [
     {
-      "timeCreated": 1774032446324,
+      "id": "54e0eccd-8f36-462b-b68a-486349e85a3d",
+      "timeCreated": 1774470821517,
+      "image": "carne-flowers.jpg",
+      "name": "Crane with Flowers Print",
+      "price": 2399,
+      "tags": [
+        "floral",
+        "nature",
+        "birds"
+      ],
+      "quantity": 2
+    },
+    {
       "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
+      "timeCreated": 1774470773410,
       "image": "blue-flowers.jpg",
-      "name": "Red Flowers Print",
+      "name": "Blue Flowers Print",
       "price": 1799,
       "tags": [
         "floral",
         "nature"
       ],
-      "quantity": 49
+      "quantity": 2
     },
     {
-      "timeCreated": 1774029368679,
+      "timeCreated": 1774471755971,
       "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
       "image": "trees.jpg",
       "name": "Trees Print",
@@ -379,30 +392,19 @@
       "tags": [
         "nature"
       ],
-      "quantity": 33
+      "quantity": 4
     },
     {
-      "timeCreated": 1774029380133,
-      "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
-      "image": "cat.jpg",
-      "name": "Cat Print",
-      "price": 1900,
+      "id": "78vf9bbe-9e46-475b-adde-4df4dfed3a04",
+      "timeCreated": 1774471762508,
+      "image": "avocado.jpg",
+      "name": "Avocado Print",
+      "price": 2499,
       "tags": [
-        "animals"
+        "nature",
+        "food"
       ],
-      "quantity": 10
-    },
-    {
-      "id": "77ac32u5-6a89-4bcb-a5d1-158a74287c53",
-      "timeCreated": 1774037147977,
-      "image": "green-flower.jpg",
-      "name": "Green Flower Print",
-      "price": 2599,
-      "tags": [
-        "floral",
-        "nature"
-      ],
-      "quantity": 8
+      "quantity": 3
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
