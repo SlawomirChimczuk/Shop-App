@@ -91,10 +91,14 @@
 }
 
 .basketMain .basketItemWrapper,
-.basketMain .payment-summary {
+.basketMain .basketPaymentSummary {
   border: 2px solid rgb(224, 115, 115);;
   border-radius: 4px;
   padding: 18px;
+}
+
+.basketPaymentSummary{
+  margin-bottom: 10px;
 }
 
 .basketMain .basketItemWrapper {
@@ -157,9 +161,43 @@
   margin-bottom: 3px;
 }
 
+.basketMain .basketPaymentSummaryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
 
+.basketMain .basketPaymentSummaryLine {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 15px;
+  margin-bottom: 9px;
+}
 
+.basketMain .basketPaymentSummaryPrice {
+  text-align: right;
+}
 
+.basketMain .semiLine .basketPaymentSummaryPrice {
+  border-top: 1px solid  rgb(170, 59, 59);;
+}
 
+.basketMain .semiLine div {
+  padding-top: 9px;
+}
 
+.basketMain .fullLine {
+  color: rgb(103, 15, 15);
+  font-weight: 700;
+  font-size: 18px;
 
+  border-top: 1px solid  rgb(170, 59, 59);;
+  padding-top: 18px;
+}
+
+.basketMain .basketOrder {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+}

@@ -2,6 +2,7 @@ import styles from './basket.module.css'
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { basketItemsContext } from "../../context/BasketItemsProvider";
+import { formatMillisecondsToDate } from '../../utils/date';
 
 export default function ItemsSummary(){
 
@@ -49,7 +50,7 @@ export default function ItemsSummary(){
                     return(
                         <div key={basketItem.id} className={styles.basketItemWrapper}>
                             <div className={styles.basketItemDate}>
-                                Delivery date: {basketItem.timeCreated}
+                                 Print name: {basketItem.name}
                             </div>
 
                             <div className={styles.basketItemDataLayout}>
@@ -60,7 +61,7 @@ export default function ItemsSummary(){
 
                                 <div className={styles.basketItemInfo}>
                                     <div className={styles.basketItemInfoSize}>
-                                        Print name: {basketItem.name}
+                                        Item added at: {formatMillisecondsToDate(basketItem.timeCreated)}
                                     </div>
                                     <div className={styles.basketItemInfoSize}>
                                         Price: {basketItem.quantity * basketItem.price}

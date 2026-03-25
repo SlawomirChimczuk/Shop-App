@@ -59,6 +59,7 @@
   position: absolute;
   top: 35.5px;
   right: 10px;
+  min-width: 16px;
   text-align: center;
   padding: 5px;
 }
