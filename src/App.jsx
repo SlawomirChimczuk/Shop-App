@@ -5,6 +5,8 @@ import Search from "./components/search/Search"
 import Home from "./pages/home/Home"
 import { BasketItemsProvider } from "./context/BasketItemsProvider"
 import Basket from "./pages/basket/Basket"
+import Orders from "./pages/orders/Orders"
+import Form from "./pages/form/Form"
 
 function App() {  
 
@@ -15,6 +17,8 @@ function App() {
         <Routes>
             <Route index element={<Home />} /> 
             <Route path="basket" element={<Basket />} />
+            <Route path="form" element={<Form />} />
+            <Route path="orders" element={<Orders />} />
         </Routes>
       </BasketItemsProvider>
     </>

@@ -12,10 +12,10 @@ export default function BasketPriceSummary(){
 
     const createOrder = async () => {
         await axios.post('http://localhost:5000/orders', {
-
+           items: basketItems
         });
         await loadBasket();
-        navigate('/orders')
+        navigate('/form');
     }
 
     const [itemsSummary, setItemsSummary] = useState([]);
