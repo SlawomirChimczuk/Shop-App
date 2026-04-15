@@ -6,7 +6,7 @@ export default function ItemsLayout({items}){
    
     return(
         <div className={styles.itemsLayoutContainer}>
-            {items.map((item) => {
+            {items?.map((item) => {
                 return(
                     <Item key={item.id} item={item} />
                 )

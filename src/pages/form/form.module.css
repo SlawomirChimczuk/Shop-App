@@ -1,0 +1,43 @@
+.form{
+    padding: 5%;
+    /* max-width: 400px; */
+}
+
+.formHeading{
+    color: rgb(224, 115, 115);
+    font-size: 24px;
+}
+
+.formWrapper{
+    border: 2px solid rgb(224, 115, 115);
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.inputWrapper{
+    padding: 5px 15px;
+}
+
+.inputWrapper > input{
+    border: 1px solid rgb(224, 115, 115);;
+    width: 100%;
+    color: rgb(224, 115, 115);
+    /* padding: 14px; */
+    height: 30px;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.orderButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 115, 115);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+}

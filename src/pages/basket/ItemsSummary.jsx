@@ -1,10 +1,11 @@
-import styles from './basket.module.css'
+// import styles from './basket.module.css'
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { basketItemsContext } from "../../context/BasketItemsProvider";
 import { formatMillisecondsToDate } from '../../utils/date';
+import { toDecimal } from "../../utils/price";
 
-export default function ItemsSummary(){
+export default function ItemsSummary({styles}){
 
     const { basketItems, loadBasket } = useContext(basketItemsContext);
     const [items, setItems] = useState([]);
@@ -13,9 +14,10 @@ export default function ItemsSummary(){
       setItems(basketItems);
     }, [basketItems]);
 
+    toDecimal
 
     function handleQuantityChange(id, itemQuantity){
-       const updateBasket = items.map((item) => {
+       const updateBasket = items?.map((item) => {
         if(item.id === id){
             return { ...item, quantity: Number(itemQuantity)}
         };
@@ -29,8 +31,7 @@ export default function ItemsSummary(){
         <>
             <div>
 
-                {items.map((basketItem)=> {
-
+                {items?.map((basketItem)=> {
                     
                     const updateItemQuantity = async () => {
                         const itemQyt = items.filter(item => item.id === basketItem.id);
@@ -64,31 +65,38 @@ export default function ItemsSummary(){
                                         Item added at: {formatMillisecondsToDate(basketItem.timeCreated)}
                                     </div>
                                     <div className={styles.basketItemInfoSize}>
-                                        Price: {basketItem.quantity * basketItem.price}
+                                        Price: {toDecimal(basketItem.quantity * basketItem.price)}
                                     </div>
                                     <div className={styles.basketItemInfoSize}>
                                         Quantity: 
+                                        {location.pathname === '/basket' ?
                                         <input className={styles.basketItemInput} type='number' min='1'
                                             value={basketItem.quantity}
                                             onChange={(e) => handleQuantityChange(basketItem.id, e.target.value)}
                                         />
+                                        : " " + basketItem.quantity}
                                     </div>
                                     
 
                                 </div>
 
-                                <div className={styles.basketActionButtonWrapper}>
-                                    <button className={styles.basketActionButton}
-                                        onClick={updateItemQuantity}
-                                    >
-                                        Update
-                                    </button>
-                                    <button className={styles.basketActionButton}
-                                        onClick={deleteItemFromBasket}
-                                    >
-                                    Delete
-                                    </button>
-                                </div>
+                                {location.pathname === '/basket' && 
+                                
+                                    <div className={styles.basketActionButtonWrapper}>
+                                        <button className={styles.basketActionButton}
+                                            onClick={updateItemQuantity}
+                                        >
+                                            Update
+                                        </button>
+                                        <button className={styles.basketActionButton}
+                                            onClick={deleteItemFromBasket}
+                                        >
+                                        Delete
+                                        </button>
+                                    </div>
+                                
+                                }
+
 
                             </div>
                         </div>

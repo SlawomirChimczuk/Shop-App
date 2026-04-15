@@ -89,9 +89,8 @@
     grid-template-columns: 1fr;
   }
 }
-
-.basketMain .basketItemWrapper,
-.basketMain .basketPaymentSummary {
+.basketItemWrapper,
+.basketPaymentSummary{
   border: 2px solid rgb(224, 115, 115);;
   border-radius: 4px;
   padding: 18px;
@@ -101,12 +100,12 @@
   margin-bottom: 10px;
 }
 
-.basketMain .basketItemWrapper {
+.basketItemWrapper {
   margin-bottom: 12px;
   text-align: center;
 }
 
-.basketMain .basketItemDate {
+.basketItemDate {
   color: rgb(103, 15, 15);
   font-weight: 700;
   font-size: 19px;
@@ -117,7 +116,7 @@
 
 .basketMain .basketItemDataLayout {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   column-gap: 35px;
 }
 
@@ -161,24 +160,24 @@
   margin-bottom: 3px;
 }
 
-.basketMain .basketPaymentSummaryTitle {
+.basketPaymentSummaryTitle {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 12px;
 }
 
-.basketMain .basketPaymentSummaryLine {
+.basketPaymentSummaryLine {
   display: grid;
   grid-template-columns: 1fr auto;
   font-size: 15px;
   margin-bottom: 9px;
 }
 
-.basketMain .basketPaymentSummaryPrice {
+.basketPaymentSummaryPrice {
   text-align: right;
 }
 
-.basketMain .semiLine .basketPaymentSummaryPrice {
+.semiLine .basketPaymentSummaryPrice {
   border-top: 1px solid  rgb(170, 59, 59);;
 }
 

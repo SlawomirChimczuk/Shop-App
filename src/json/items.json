@@ -357,54 +357,148 @@
       ]
     }
   ],
-  "basket-items": [
+  "basket-items": [],
+  "orders": [
     {
-      "id": "54e0eccd-8f36-462b-b68a-486349e85a3d",
-      "timeCreated": 1774470821517,
-      "image": "carne-flowers.jpg",
-      "name": "Crane with Flowers Print",
-      "price": 2399,
-      "tags": [
-        "floral",
-        "nature",
-        "birds"
+      "id": "f21a",
+      "form": {
+        "data": {
+          "firstName": "a",
+          "lastName": "a",
+          "address": "a",
+          "country": "a",
+          "email": "a@a.com",
+          "telephone": "455474573",
+          "additional": ""
+        }
+      },
+      "items": [
+        {
+          "id": "83d4ca15-6aa0-4b85-b27f-e1d07ac678c6",
+          "timeCreated": 1776280583318,
+          "image": "red-flowers.jpg",
+          "name": "Red Flowers Print",
+          "price": 1199,
+          "tags": [
+            "floral",
+            "nature"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+          "timeCreated": 1776280584062,
+          "image": "trees.jpg",
+          "name": "Trees Print",
+          "price": 2395,
+          "tags": [
+            "nature"
+          ],
+          "quantity": 1
+        }
       ],
-      "quantity": 2
+      "prices": [
+        {
+          "itemPrice": 3594,
+          "deliveryPrice": 10,
+          "itemTax": 431,
+          "totalPrice": 5025
+        }
+      ]
     },
     {
-      "id": "e43638ce-0f35-48f5-b7a3-1ea211114f2e",
-      "timeCreated": 1774470773410,
-      "image": "blue-flowers.jpg",
-      "name": "Blue Flowers Print",
-      "price": 1799,
-      "tags": [
-        "floral",
-        "nature"
+      "id": "3f88",
+      "form": {
+        "data": {
+          "firstName": "a",
+          "lastName": "a",
+          "address": "a",
+          "country": "a",
+          "email": "a@a.com",
+          "telephone": "123",
+          "additional": ""
+        }
+      },
+      "items": [
+        {
+          "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+          "timeCreated": 1776280874029,
+          "image": "trees.jpg",
+          "name": "Trees Print",
+          "price": 2395,
+          "tags": [
+            "nature"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
+          "timeCreated": 1776280876193,
+          "image": "cat.jpg",
+          "name": "Cat Print",
+          "price": 1900,
+          "tags": [
+            "animals"
+          ],
+          "quantity": 3
+        }
       ],
-      "quantity": 2
+      "prices": [
+        {
+          "itemPrice": 8095,
+          "deliveryPrice": 10,
+          "itemTax": 971,
+          "totalPrice": 10066
+        }
+      ]
     },
     {
-      "timeCreated": 1774471755971,
-      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
-      "image": "trees.jpg",
-      "name": "Trees Print",
-      "price": 2395,
-      "tags": [
-        "nature"
+      "id": "82fc",
+      "form": {
+        "data": {
+          "firstName": "First",
+          "lastName": "Last",
+          "address": "addres",
+          "country": "Country",
+          "email": "a@a.com",
+          "telephone": "123456789",
+          "additional": "None"
+        }
+      },
+      "items": [
+        {
+          "id": "78vf9bbe-9e46-475b-adde-4df4dfed3a04",
+          "timeCreated": 1776280907315,
+          "image": "avocado.jpg",
+          "name": "Avocado Print",
+          "price": 2499,
+          "tags": [
+            "nature",
+            "food"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "ag45uy12-f540-454e-8a1e-363f25dbae7d",
+          "timeCreated": 1776280907909,
+          "image": "tomatoes.jpg",
+          "name": "Tomatoes Print",
+          "price": 2374,
+          "tags": [
+            "nature",
+            "food"
+          ],
+          "quantity": 1
+        }
       ],
-      "quantity": 4
-    },
-    {
-      "id": "78vf9bbe-9e46-475b-adde-4df4dfed3a04",
-      "timeCreated": 1774471762508,
-      "image": "avocado.jpg",
-      "name": "Avocado Print",
-      "price": 2499,
-      "tags": [
-        "nature",
-        "food"
-      ],
-      "quantity": 3
+      "prices": [
+        {
+          "itemPrice": 4873,
+          "deliveryPrice": 10,
+          "itemTax": 584,
+          "totalPrice": 6457
+        }
+      ]
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

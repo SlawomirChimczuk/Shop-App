@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useEffect, useState } from "react";
 const basketItemsContext = createContext();
