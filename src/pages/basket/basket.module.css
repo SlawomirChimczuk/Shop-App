@@ -1,6 +1,6 @@
 .basketHeader {
   background-color: rgb(103, 15, 15);
-  border-bottom: 2px solid rgb(224, 115, 115);
+  border-bottom: 1px solid rgb(224, 115, 115);
   color: white;
   padding-left: 5px;
   padding-right: 5px;
@@ -71,6 +71,7 @@
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 18px;
+  color: rgb(224, 115, 115);
 }
 
 .basketMain .basketMainGrid {
@@ -91,7 +92,7 @@
 }
 .basketItemWrapper,
 .basketPaymentSummary{
-  border: 2px solid rgb(224, 115, 115);;
+  border: 1px solid rgb(224, 115, 115);
   border-radius: 4px;
   padding: 18px;
 }

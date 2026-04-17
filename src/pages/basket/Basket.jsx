@@ -16,8 +16,10 @@ export default function Basket(){
     const getSummaryInformations = () => {
         navigate('/form');
     }
+    
 
     return(
+        basketItems.length != 0 &&
         <>
             <div>
                 <div className={styles.basketHeader}>
@@ -30,7 +32,7 @@ export default function Basket(){
                 </div>
 
                 <div className={styles.basketMain}>
-                    <div className={styles.basketMainTitle}>Check your order</div>
+                    <div className={styles.basketMainTitle}>Check your basket</div>
 
                     <div className={styles.basketMainGrid}>
                         <ItemsSummary styles={styles}/>

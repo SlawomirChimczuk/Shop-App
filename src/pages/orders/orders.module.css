@@ -1,0 +1,57 @@
+.orders{
+    padding: 2%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ordersHeading{
+    color: rgb(224, 115, 115);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.orderInfoHeading{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.singleOrder{
+    border: 1px solid rgb(224, 115, 115);;
+    border-radius: 4px;
+    padding: 18px;
+    margin: 9px 0;
+}
+
+.orderNumber{
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.orderBorderline{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(170, 59, 59);;
+    margin: 5px 0;
+}
+
+.orderSingleItem{
+    margin-bottom: 5px;
+    border: 1px solid rgb(224, 115, 115);;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.orderDeleteButton{
+    display: inline-block;
+    padding: 6px 9.5px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgb(170, 59, 59);
+    color: white;
+    background-color: rgb(103, 15, 15);
+    margin-right: 5px;
+    min-width: 65px;
+    margin-bottom: 3px;
+}

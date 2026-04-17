@@ -357,101 +357,20 @@
       ]
     }
   ],
-  "basket-items": [],
+  "basket-items": [
+    {
+      "timeCreated": 1776439306814,
+      "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+      "image": "trees.jpg",
+      "name": "Trees Print",
+      "price": 2395,
+      "tags": [
+        "nature"
+      ],
+      "quantity": 2
+    }
+  ],
   "orders": [
-    {
-      "id": "f21a",
-      "form": {
-        "data": {
-          "firstName": "a",
-          "lastName": "a",
-          "address": "a",
-          "country": "a",
-          "email": "a@a.com",
-          "telephone": "455474573",
-          "additional": ""
-        }
-      },
-      "items": [
-        {
-          "id": "83d4ca15-6aa0-4b85-b27f-e1d07ac678c6",
-          "timeCreated": 1776280583318,
-          "image": "red-flowers.jpg",
-          "name": "Red Flowers Print",
-          "price": 1199,
-          "tags": [
-            "floral",
-            "nature"
-          ],
-          "quantity": 1
-        },
-        {
-          "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
-          "timeCreated": 1776280584062,
-          "image": "trees.jpg",
-          "name": "Trees Print",
-          "price": 2395,
-          "tags": [
-            "nature"
-          ],
-          "quantity": 1
-        }
-      ],
-      "prices": [
-        {
-          "itemPrice": 3594,
-          "deliveryPrice": 10,
-          "itemTax": 431,
-          "totalPrice": 5025
-        }
-      ]
-    },
-    {
-      "id": "3f88",
-      "form": {
-        "data": {
-          "firstName": "a",
-          "lastName": "a",
-          "address": "a",
-          "country": "a",
-          "email": "a@a.com",
-          "telephone": "123",
-          "additional": ""
-        }
-      },
-      "items": [
-        {
-          "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
-          "timeCreated": 1776280874029,
-          "image": "trees.jpg",
-          "name": "Trees Print",
-          "price": 2395,
-          "tags": [
-            "nature"
-          ],
-          "quantity": 1
-        },
-        {
-          "id": "2avt68hc-64d2-4137-8860-1f5a963e534b",
-          "timeCreated": 1776280876193,
-          "image": "cat.jpg",
-          "name": "Cat Print",
-          "price": 1900,
-          "tags": [
-            "animals"
-          ],
-          "quantity": 3
-        }
-      ],
-      "prices": [
-        {
-          "itemPrice": 8095,
-          "deliveryPrice": 10,
-          "itemTax": 971,
-          "totalPrice": 10066
-        }
-      ]
-    },
     {
       "id": "82fc",
       "form": {
