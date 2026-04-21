@@ -2,13 +2,15 @@ import styles from "./orders.module.css"
 import { toDecimal } from "../../utils/price";
 import axios from "axios";
 
-export default function SingleOrder({orders}){
+export default function SingleOrder({orders, setOrders}){
 
     const deleteOrderFromList = async (id) =>{
         const updateOrderLits = orders.filter(item => item.id === id);
         const odrderId = updateOrderLits[0].id;
-        
+
         await axios.delete(`http://localhost:5000/orders/${odrderId}`);
+
+        setOrders(orders => orders.filter(item => item.id !== id));
     }
 
     return(

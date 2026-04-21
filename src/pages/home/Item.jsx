@@ -1,7 +1,7 @@
 import styles from "./item.module.css"
 import style from "../../additional.module.css"
 import { useContext, useState } from "react"
-import { basketItemsContext } from "../../context/BasketItemsProvider";
+import { BasketItemsContext } from "../../context/BasketItemsContext";
 import axios from "axios";
 import { toDecimal } from "../../utils/price";
 
@@ -10,7 +10,7 @@ import { toDecimal } from "../../utils/price";
 export default function Item({item}){    
 
     const [qty, setQty] = useState(1);
-    const { basketItems, loadBasket } = useContext(basketItemsContext);
+    const { basketItems, loadBasket } = useContext(BasketItemsContext);
 
     
     const addToBasket = async () => {

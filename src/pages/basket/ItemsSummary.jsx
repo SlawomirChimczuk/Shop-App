@@ -1,13 +1,13 @@
 // import styles from './basket.module.css'
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { basketItemsContext } from "../../context/BasketItemsProvider";
+import { BasketItemsContext } from "../../context/BasketItemsContext";
 import { formatMillisecondsToDate } from '../../utils/date';
 import { toDecimal } from "../../utils/price";
 
 export default function ItemsSummary({styles}){
 
-    const { basketItems, loadBasket } = useContext(basketItemsContext);
+    const { basketItems, loadBasket } = useContext(BasketItemsContext);
     const [items, setItems] = useState([]);
 
     useEffect(() => {

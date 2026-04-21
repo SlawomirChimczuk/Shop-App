@@ -1,11 +1,11 @@
 // import styles from './basket.module.css';
-import { basketItemsContext } from "../../context/BasketItemsProvider";
+import { BasketItemsContext } from "../../context/BasketItemsContext";
 import { useContext, useEffect } from "react";
 import { useState } from "react";
 import { toDecimal } from "../../utils/price";
 
 export default function BasketPriceSummary({ getPriceSummary = () => {}, styles }){
-    const { basketItems } = useContext(basketItemsContext);
+    const { basketItems } = useContext(BasketItemsContext);
 
     const [itemsSummary, setItemsSummary] = useState([]);
 

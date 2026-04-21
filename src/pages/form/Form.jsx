@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { basketItemsContext } from '../../context/BasketItemsProvider'
+import { BasketItemsContext } from '../../context/BasketItemsContext'
 import FormInputs from "./FormInputs";
 import axios from "axios";
 import BasketPriceSummary from "../basket/BasketPriceSummary";
@@ -9,7 +9,7 @@ import ItemsSummary from "../basket/ItemsSummary";
 import { useNavigate } from "react-router";
 
 export default function Form(){
-    const { basketItems, loadBasket } = useContext(basketItemsContext);
+    const { basketItems, loadBasket } = useContext(BasketItemsContext);
     const [prices, setPrices] = useState([]);
 
     const summaryPrice = (price) => {
@@ -17,9 +17,6 @@ export default function Form(){
     }
 
     const navigate = useNavigate();
-
-    console.log('prices', prices);
-    
 
     const placeAnOrder = async (formData) =>{
         try{
@@ -45,6 +42,7 @@ export default function Form(){
     }
 
     return(
+        basketItems.length != 0 &&
         <>
             <div className={style.form}>
                 <h2 className={style.formHeading}>

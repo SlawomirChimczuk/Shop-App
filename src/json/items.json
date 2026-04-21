@@ -359,7 +359,7 @@
   ],
   "basket-items": [
     {
-      "timeCreated": 1776439306814,
+      "timeCreated": 1776790574274,
       "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
       "image": "trees.jpg",
       "name": "Trees Print",
@@ -367,7 +367,20 @@
       "tags": [
         "nature"
       ],
-      "quantity": 2
+      "quantity": 7
+    },
+    {
+      "id": "54e0eccd-8f36-462b-b68a-486349e85a3d",
+      "timeCreated": 1776790573376,
+      "image": "carne-flowers.jpg",
+      "name": "Crane with Flowers Print",
+      "price": 2399,
+      "tags": [
+        "floral",
+        "nature",
+        "birds"
+      ],
+      "quantity": 1
     }
   ],
   "orders": [
@@ -416,6 +429,41 @@
           "deliveryPrice": 10,
           "itemTax": 584,
           "totalPrice": 6457
+        }
+      ]
+    },
+    {
+      "id": "028b",
+      "form": {
+        "data": {
+          "firstName": "new",
+          "lastName": "old",
+          "address": "abc",
+          "country": "ABC",
+          "email": "a@a.com",
+          "telephone": "123",
+          "additional": ""
+        }
+      },
+      "items": [
+        {
+          "timeCreated": 1776439306814,
+          "id": "15c7uc6f-327a-4ec4-896f-8182611d9add",
+          "image": "trees.jpg",
+          "name": "Trees Print",
+          "price": 2395,
+          "tags": [
+            "nature"
+          ],
+          "quantity": 2
+        }
+      ],
+      "prices": [
+        {
+          "itemPrice": 4790,
+          "deliveryPrice": 10,
+          "itemTax": 574,
+          "totalPrice": 6364
         }
       ]
     }

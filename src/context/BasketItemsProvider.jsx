@@ -1,14 +1,12 @@
-/* eslint-disable react-hooks/set-state-in-effect */
-/* eslint-disable react-refresh/only-export-components */
-import { createContext, useEffect, useState } from "react";
-const basketItemsContext = createContext();
+import { useCallback, useEffect, useState } from "react";
+import { BasketItemsContext } from "./BasketItemsContext";
 
 function BasketItemsProvider({children}){
 
-
     const [basketItems, setBasketItems] = useState([]);
 
-    const loadBasket = async () => {
+    
+    const loadBasket = useCallback(async () => {
         try{
             const res = await fetch('http://localhost:5000/basket-items');
             const data = await res.json();
@@ -16,16 +14,22 @@ function BasketItemsProvider({children}){
         } catch(error){
              console.log('Error fetching data for basket items: ', error);
         }
-    }
-    useEffect(() => {
-        loadBasket();
     },[]);
 
+    useEffect(() => {
+        // loadBasket();
+        let isMounted = true;
+        const fetchData = async () => await loadBasket();
+        isMounted && fetchData();
+        return () => isMounted = false;
+
+    },[loadBasket]);
+
     return(
-        <basketItemsContext.Provider value={{ basketItems, loadBasket }}>
+        <BasketItemsContext.Provider value={{ basketItems, loadBasket }}>
             {children}
-        </basketItemsContext.Provider>
+        </BasketItemsContext.Provider>
     );
 }
 
-export { BasketItemsProvider, basketItemsContext };
+export { BasketItemsProvider };

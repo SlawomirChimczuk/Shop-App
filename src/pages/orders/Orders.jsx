@@ -1,11 +1,10 @@
 import useFetch from "../../utils/useFetch";
 import SingleOrder from "./SingleOrder";
-import styles from "./orders.module.css"
+import styles from "./orders.module.css";
 
 export default function Orders(){    
 
-    const { data: orders, loading, error } = useFetch('http://localhost:5000/orders');
-
+    const { data: orders, setData: setOrders, loading, error } = useFetch('http://localhost:5000/orders');
 
     console.log('orders',orders);
     
@@ -17,7 +16,7 @@ export default function Orders(){
             </h2>
             {loading && <div>Loading...</div>}
             {error && <div>{error}</div>}
-            {orders && <SingleOrder orders={orders}/>}
+            {orders && <SingleOrder orders={orders} setOrders={setOrders} />}
         </div>
     )
 }

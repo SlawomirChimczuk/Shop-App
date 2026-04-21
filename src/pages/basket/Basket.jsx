@@ -1,7 +1,7 @@
 import styles from './basket.module.css'
 import style from "../../additional.module.css";
 import { Link } from 'react-router'
-import { basketItemsContext } from '../../context/BasketItemsProvider'
+import { BasketItemsContext } from '../../context/BasketItemsContext'
 import { useContext } from 'react';
 import { useNavigate } from "react-router";
 import ItemsSummary from './ItemsSummary';
@@ -9,7 +9,7 @@ import BasketPriceSummary from './BasketPriceSummary';
 
 export default function Basket(){
     
-    const { basketItems } = useContext(basketItemsContext);
+    const { basketItems } = useContext(BasketItemsContext);
     
     const navigate = useNavigate();
 

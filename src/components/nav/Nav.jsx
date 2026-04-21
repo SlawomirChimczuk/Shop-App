@@ -1,11 +1,11 @@
 import { Link } from "react-router"
 import styles from "./nav.module.css"
 import { useContext } from "react"
-import { basketItemsContext } from "../../context/BasketItemsProvider";
+import { BasketItemsContext } from "../../context/BasketItemsContext";
 
 export default function Nav(){
 
-    const { basketItems } = useContext(basketItemsContext);
+    const { basketItems } = useContext(BasketItemsContext);
 
     let basketQty = 0;
 
