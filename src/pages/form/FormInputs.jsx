@@ -1,22 +1,34 @@
-import { useState } from "react";
+import { useRef } from "react";
 import styles from './form.module.css'
 
 export default function FormInputs({ getFormData, style }){
-
-
-    const [data, setData] = useState({firstName: '', lastName: '', address: '', country: '', email: '', telephone: '', additional: ''});
+    const dataRef = useRef({});
 
     const createOrder = (e) => {
         e.preventDefault();
 
-
+        const data = {
+            firstName: dataRef.current.firstName.value,
+            lastName: dataRef.current.lastName.value, 
+            address: dataRef.current.address.value, 
+            country: dataRef.current.country.value, 
+            email: dataRef.current.email.value, 
+            telephone: dataRef.current.telephone.value,
+            additional: dataRef.current.additional.value
+        }
+        
         const formData = {
             data
         }
 
         getFormData(formData);
+
         
-    } 
+    }
+
+    const setDataRef = (name) => (e) => {
+        dataRef.current[name] = e;
+    };
 
     return(
         <>
@@ -30,8 +42,7 @@ export default function FormInputs({ getFormData, style }){
                                     className=""
                                     placeholder="First Name"
                                     required
-                                    value={data.firstName}
-                                    onChange={(e) => setData({...data, firstName: e.target.value})}
+                                    ref={setDataRef('firstName')} 
                                 />
                             </div>
 
@@ -42,20 +53,18 @@ export default function FormInputs({ getFormData, style }){
                                     className=""
                                     placeholder="Last Name"
                                     required
-                                    value={data.lastName}
-                                    onChange={(e) => setData({ ...data, lastName: e.target.value})}
+                                    ref={setDataRef('lastName')} 
                                 />
                             </div>
 
                             <div className={style.inputWrapper}>
                                 <input
                                     type="text"
-                                    name="adress"
+                                    name="address"
                                     className=""
                                     placeholder="Address"
                                     required
-                                    value={data.address}
-                                    onChange={(e) => setData({ ...data, address: e.target.value})}
+                                    ref={setDataRef('address')} 
                                 />
                             </div>
 
@@ -66,8 +75,7 @@ export default function FormInputs({ getFormData, style }){
                                     className=""
                                     placeholder="Country"
                                     required
-                                    value={data.country}
-                                    onChange={(e) => setData({ ...data, country: e.target.value})}
+                                    ref={setDataRef('country')} 
                                 />
                             </div>
 
@@ -78,8 +86,7 @@ export default function FormInputs({ getFormData, style }){
                                     className=""
                                     placeholder="e-mail"
                                     required
-                                    value={data.email}
-                                    onChange={(e) => setData({ ...data, email: e.target.value})}
+                                    ref={setDataRef('email')} 
                                 />
                             </div>
 
@@ -90,8 +97,7 @@ export default function FormInputs({ getFormData, style }){
                                     className=""
                                     placeholder="Telephone"
                                     required
-                                    value={data.telephone}
-                                    onChange={(e) => setData({ ...data, telephone: e.target.value})}
+                                    ref={setDataRef('telephone')} 
                                 />
                             </div>
 
@@ -101,8 +107,7 @@ export default function FormInputs({ getFormData, style }){
                                     name="additional"
                                     className=""
                                     placeholder="Additional Informations"
-                                    value={data.additional}
-                                    onChange={(e) => setData({ ...data, additional: e.target.value})}
+                                    ref={setDataRef('additional')} 
                                 />
                             </div>
 
